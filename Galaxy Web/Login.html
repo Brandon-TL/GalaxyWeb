@@ -4,28 +4,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Login.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <title>Iniciar Sesion</title>
+  <title>Login</title>
 </head>
 <body>
-  <h1>Galaxy Web</h1>
-
+    <header>
+      <h1>Galaxy Web</h1>
+    </header>
   <div class="Container">
     <form method="GET" action="#">
       <div class="form_usuario">
-        <input placeholder="Usuario" id="usuario" type="text"/>
+        <input placeholder="User" id="usuario" type="text"/>
       </div>
       <div class="form_password">
-        <input placeholder="Contraseña" id="password" type="password"/>
+        <input placeholder="Password" id="password" type="password"/>
       </div>
-      <a href="#">¿Has olvidado tu contraseña?</a>
-      <input class="button" type="button" value="Iniciar sesión">
-      <input class="button" type="button" value="Registrarse">
+      <div class="ask"><a href="#">Did you forgot your password?</a></div>
+      <div class="button"><a href="#">Log in</a></div>
+      <div class="button"><a target="_blank"  href="SignUp.html">Sign up</a></div>
     </form>
   </div>
-
-  <img class="lulo" src="img/alien.gif" alt="">
 </body>
 </html>
