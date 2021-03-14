@@ -1,15 +1,15 @@
 /* Definición de variables */
 :root {
-    --bg-color-header: #16a085;
-    --bg-color-header-shadow: #0b524377;
+    --bg-color-header: #6260bd;
+    --bg-color-header-shadow: #2c2c54;
     --bg-color-nav: #34495e;
     --bg-color-main: #2c3e50;
     --bg-color-accent: #e74c3c;
-    --bg-color-thead: #7f8c8d;
+    --bg-color-thead: #227093;
     --bg-color-par: #34495e80;
     --text-main: #FFF;
     --link-color: #FFF;
-    --menu-width: 15rem;
+    --menu-width: 16rem;
 }
 
 /* Reseteo básico de estilos */
@@ -75,10 +75,6 @@ main {
     border-radius: 5px;
 }
 
-.menu a:hover{
-    border-left: 4px var(--bg-color-accent) solid;
-}
-
 .menu > li:last-child {
     position: absolute;
     bottom: 0;
@@ -93,7 +89,7 @@ main {
 }
 
 .selected::after{ /* marcamos la opción de menú seleccionada */
-    content: "<";
+    content: "";
     position: absolute;
     right: 1rem;
 }
@@ -140,31 +136,59 @@ main {
 fieldset {
     padding: 0.5em 1em 1em;
     margin-bottom: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
 }
 
 fieldset > input {
     display: inline-block;
 }
-
-.padBot {
-    padding-bottom: 0.5em;
+input, select {
+    width: 12em;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    height: 2.5em;
+    padding-left: 1em;
 }
-
-select, option {
-    padding: 0.75em 1em;
-    height: 3em;
+.padBot {
+    display: flex;
+    width: 30%;
+    padding-bottom: 0.5em;
+    justify-content: space-between;
     color: black;
 }
 
-button {
-    padding: 1em 1.5em;
-    font-size: 1em;
-    background-color: var(--bg-color-header);
-    border: none;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
-    cursor: pointer;
+select, option {
+    padding: 0.5em;
+    height: 2.5em;
+    color: black;
+
 }
 
-.menu > li:last-child > a:hover {
+.button {
+    display: inline-block;
+    margin-top: .5em;
+    padding: .5em;
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: var(--bg-color-header);
+    border: none;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(199, 163, 163, 0));
+    cursor: pointer;
+    color: var(--link-color);
+}
+
+.menu > li:hover {
+    background: linear-gradient(to right, var(--bg-color-nav), var(--bg-color-header), var(--bg-color-nav));
     font-weight: 700;
+    box-shadow: -2px -2px 5px 5px var(--bg-color-main);
+}
+.menu > li:first-child {
+    background: linear-gradient(to right, var(--bg-color-nav), var(--bg-color-accent), var(--bg-color-nav));
+    font-weight: 700;
+    box-shadow: -2px -2px 5px 5px var(--bg-color-main);
 }

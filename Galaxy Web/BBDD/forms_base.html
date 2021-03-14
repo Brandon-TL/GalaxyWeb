@@ -14,39 +14,67 @@
 </head>
 <body>
   <header class="main-header">
-    <h1>SCA - Inventario de productos</h1>
+    <h1>Galaxy Web - AdminWeb</h1>
   </header>
   <nav>
     <ul class="menu">
         <li><a class="selected" href="#"><span class="material-icons-outlined">perm_identity</span> Usuarios</a></li>
-        <li><a href="#"><span class="material-icons-outlined">verified</span> Permisos</a></li>
+        <li><a href="#"><span class="material-icons-outlined">verified</span> Tipos de Permisos</a></li>
         <li><a href="#"><span class="material-icons-outlined">group_add</span> Permisos de Usuarios</a></li>
         <li><a href="#"><span class="material-icons-outlined">memory</span> Hardcodes</a></li>
         <li><a href="#"><span class="material-icons-outlined">double_arrow</span> Accesos</a></li>
         <li><a href="#"><span class="material-icons-outlined">help</span> FAQ</a></li>
-        <li><a href="#">Abrir ticket de soporte</a></li>
+        <li><a href="#">Cerrar sesión</a></li>
     </ul>
   </nav>
   <main>
     <div class="filters">
         <form>
             <fieldset>
-                <legend><span class="material-icons-outlined">filter_alt</span></legend>
-                <div class="padBot"><input type="radio" name="order" id="e-mail"><label for="e-mail"> Ordenar por e-mail</label></div>
-                <div class="padBot"><input type="radio" name="order" id="name" checked><label for="name"> Ordenar por nombre y apellidos</label></div>
-                <div class="padBot"><input type="radio" name="order" id="country"><label for="country"> Ordernar por país</label></div>
-                <div class="padBot"><input type="radio" name="order" id="status"><label for="status"> Estado</label></div>
-                <div class="padBot"><input type="radio" name="order" id="register_date"><label for="register_date"> Fecha de registro</label></div>
-                <div class="padBot"><input type="radio" name="order" id="vip_start_date"><label for="vip_start_date"> Fecha inicio VIP</label></div>
-                <div class="padBot"><input type="radio" name="order" id="vip_end_date"><label for="vip_end_date"> Fecha fin VIP</label></div>
-                <div>
-                  <select name="oder" id="oder">
-                    <option value="asc" selected>Ascendente</option>
-                    <option value="desc">Descendente</option>
+                <legend><span class="material-icons-outlined">perm_identity</span></legend>
+                <div class="padBot">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" name="order" id="nombre">
+                </div>
+                <div class="padBot">
+                  <label for="e-mail"> E-mail</label>
+                  <input type="e-mail" name="order" id="e-mail">
+                </div>
+                <div class="padBot">
+                  <label for="apellido1"> Primer apellido</label>
+                  <input type="text" name="order" id="apellido1" checked>
+                </div>
+                <div class="padBot">
+                  <label for="apellido2"> Segundo apellido</label>
+                  <input type="text" name="order" id="apellido2" checked>
+                </div>
+                <div class="padBot">
+                  <label for="country">País</label>
+                  <input type="text" name="order" id="country">
+                </div>
+                <div class="padBot">
+                  <label for="status">Estado </label>
+                  <select name="status" id="status">
+                    <option selected value=""></option>
+                    <option value="conectado">Conectado</option>
+                    <option value="conectado">Desconectado</option>
+                    <option value="conectado">Bloqueado</option>
                   </select>
                 </div>
+                <div class="padBot">
+                  <label for="register_date"> Fecha de registro</label>
+                  <input type="date" name="order" id="register_date">
+                </div>
+                <div class="padBot">
+                  <label for="vip_start_date"> Fecha inicio VIP</label>
+                  <input type="date" name="order" id="vip_start_date">
+                </div>
+                <div class="padBot">
+                  <label for="vip_end_date"> Fecha fin VIP</label>
+                  <input type="date" name="order" id="vip_end_date">
+                </div>
               </fieldset>
-            <button>Aplicar</button>
+            <input type="submit" value="Buscar" class="button">
         </form>
     </div>
     <div class="results">
@@ -59,8 +87,8 @@
           <th>País</th>
           <th>Estado</th>
           <th>Fecha de registro</th>
-          <th>Fecha inicio VIP</th>
-          <th>Fecha fin VIP</th>
+          <th>Fecha Inicio VIP</th>
+          <th>Fecha Fin VIP</th>
         </tr>
         <tr>
           <td>elbrayan123@gmail.com</td>
@@ -68,7 +96,7 @@
           <td>lopez</td>
           <td>martin</td>
           <td>España</td>
-          <td>OffLine</td>
+          <td>Desconectado</td>
           <td>11/11/2005</td>
           <td>11/11/2016</td>
           <td>11/12/2017</td>
@@ -79,7 +107,7 @@
           <td>lopez</td>
           <td>martin</td>
           <td>España</td>
-          <td>OffLine</td>
+          <td>Desconectado</td>
           <td>11/11/2005</td>
           <td>11/11/2016</td>
           <td>11/12/2017</td>
@@ -90,7 +118,7 @@
           <td>lopez</td>
           <td>martin</td>
           <td>España</td>
-          <td>OffLine</td>
+          <td>Desconectado</td>
           <td>11/11/2005</td>
           <td>11/11/2016</td>
           <td>11/12/2017</td>
