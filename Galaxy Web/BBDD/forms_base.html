@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen de formularios y texto</title>
+    <link rel="stylesheet" href="style_base.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <h1>SCA - Inventario de productos</h1>
+  </header>
+  <nav>
+    <ul class="menu">
+        <li><a class="selected" href="#"><span class="material-icons-outlined">perm_identity</span> Usuarios</a></li>
+        <li><a href="#"><span class="material-icons-outlined">verified</span> Permisos</a></li>
+        <li><a href="#"><span class="material-icons-outlined">group_add</span> Permisos de Usuarios</a></li>
+        <li><a href="#"><span class="material-icons-outlined">memory</span> Hardcodes</a></li>
+        <li><a href="#"><span class="material-icons-outlined">double_arrow</span> Accesos</a></li>
+        <li><a href="#"><span class="material-icons-outlined">help</span> FAQ</a></li>
+        <li><a href="#">Abrir ticket de soporte</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="filters">
+        <form>
+            <fieldset>
+                <legend><span class="material-icons-outlined">filter_alt</span></legend>
+                <div class="padBot"><input type="radio" name="disponibilidad" id="name" checked><label for="name"> Ordenar por nombre</label></div>
+                <div class="padBot"><input type="radio" name="oder" id="e-mail"><label for="stock"> Ordenar por E-mail</label></div>
+                <div class="padBot"><input type="radio" name="oder" id=""><label for="sinStock"></label></div>
+                <div>
+                  <select name="oder" id="oder">
+                    <option value="name" selected>Nombre</option>
+                    <option value="e-mail">E-mail</option>
+                    <option value="country">País</option>
+                    <option value="status">Estado</option>
+                    <option value="register_date">Fecha registro</option>
+                    <option value=""></option>
+                    <option value=""></option>
+                  </select>
+                  <select name="oder" id="oder">
+                    <option value="asc" selected>Ascendente</option>
+                    <option value="desc">Descendente</option>
+                  </select>
+                </div>
+              </fieldset>
+            <button>Aplicar</button>
+        </form>
+    </div>
+    <div class="results">
+      <table class="results-table">
+        <tr>
+          <th>E-mail</th>
+          <th>Nombre</th>
+          <th>Primer apellido</th>
+          <th>Segundo apellido</th>
+          <th>País</th>
+          <th>Estado</th>
+          <th>Fecha de registro</th>
+          <th>Fecha subscripción VIP?</th>
+          <th>Fecha fin VIP?</th>
+        </tr>
+        <tr>
+          <td>elbrayan123@gmail.com</td>
+          <td>Brayan</td>
+          <td>lopez</td>
+          <td>martin</td>
+          <td>España</td>
+          <td>OffLine</td>
+          <td>11/11/2005</td>
+          <td>11/11</td>
+          <td>holiii</td>
+        </tr>
+        <tr class="par">
+          <td>JB97</td>
+          <td>Agua oxigenada</td>
+          <td>Bote de agua oxigenada de 50cl</td>
+          <td>5€</td>
+          <td>200</td>
+          <td>holiii</td>
+          <td>holiii</td>
+          <td>holiii</td>
+          <td>holiii</td>
+        </tr>
+        <tr>
+          <td>IN78</td>
+          <td>Tijeras precisión</td>
+          <td>Tijeras con recubrimiento de titanio</td>
+          <td>51€</td>
+          <td>9</td>
+          <td>holiii</td>
+          <td>holiii</td>
+          <td>holiii</td>
+          <td>holiii</td>
+        </tr>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
