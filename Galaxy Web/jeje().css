@@ -78,6 +78,11 @@ button:hover {
     box-shadow: inset 0px 0px 20px 0px white;
 }
 
+.accept {
+    text-align: left;
+    background: rgb(212, 67, 67);
+}
+
 a {
     display: block;
     text-decoration: none;
