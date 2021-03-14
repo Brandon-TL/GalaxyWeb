@@ -21,28 +21,22 @@
       
       <form method="GET" action="#">
         <div>
-          <input placeholder="First name and surnames" id="usuario" type="text"/>
+          <input placeholder="First name and surnames" id="usuario" type="text" readonly/>
         </div>
         <div>
-          <input placeholder="E-mail" id="usuario" type="email"/>
+          <input placeholder="E-mail" id="usuario" type="email" required/>
         </div>
         <div>
-          <input placeholder="User name" id="usuario" type="text"/>
+          <input placeholder="User name" id="usuario" type="text" required/>
         </div>
         <div>
-          <input placeholder="Password" id="password" type="password"/>
+          <input placeholder="Password" id="password" type="password" required/>
         </div>
         <div>
-          <input placeholder="Repeat your password" id="password" type="password"/>
+          <input placeholder="Repeat your password" id="password" type="password" required/>
         </div>
-
-        <input type="button" value="">
-        <input type="button" value="">
-        <input type="button" value="">
-
-        <div class="button ask"><a href="#">Did you forgot your password?</a></div>
-        <div class="button"><a href="#">Log in</a></div>
-        <div class="button"><a href="#" type="sumbit">Sign up</a></div>
+        <button type="submit">Log in</button>
+        <button>Sign up</button>
 
       </form>
 

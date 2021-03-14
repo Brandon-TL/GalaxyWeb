@@ -63,21 +63,19 @@ input {
     border: none;
 }
 
-.button {
+button {
+    height: 50px;
+    width: 49%;
+    border: none;
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
     color: white;
     display: inline-block;
-    border-radius: 15px;
+    border-radius: 50px;
+    font-size: large;
 }
 
-.button:hover {
-    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.185));
+button:hover {
     box-shadow: inset 0px 0px 20px 0px white;
-}
-
-.ask {
-    display: block;
-    margin-bottom: 1em;
 }
 
 a {
@@ -89,5 +87,3 @@ a {
 .button > a {
     padding: 0.5rem 2rem;
 }
-
-input[typr  ]

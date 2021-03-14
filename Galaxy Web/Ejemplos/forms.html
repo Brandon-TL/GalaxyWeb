@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="forms.css">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de registro</h1>
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Nombre y Apellidos">
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+                <input type="password" placeholder="Confirme contraseña">
+                <div class="number">
+                    <input type="number" min="18" max="80" placeholder="Edad">
+                    <input type="number" min="50" max="100" placeholder="Peso">
+                </div>
+                <div class="gender">
+                    <input type="radio" name="gender" value="male">Hombre
+                    <input type="radio" name="gender" value="female">Mujer
+                    <input type="radio" name="gender" value="other">Otro
+                </div>
+                <input type="checkbox"><label>Acepto las <a target="_blank" href="https://policies.google.com/terms?hl=es">Condiciones de Servicio</a> y la <a target="_blank" href="https://policies.google.com/privacy?hl=es">Política de Privacidad</a> de Google.</label>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
