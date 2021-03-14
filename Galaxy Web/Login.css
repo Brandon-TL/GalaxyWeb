@@ -31,6 +31,7 @@ h1 {
   font-size: 7.5em;
   display: flex;
   text-align: right;
+  text-shadow: 0px 0 10px black;
 }
 
 form {
@@ -41,13 +42,20 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.10));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
   height: 100vh;
   width: 40vw;
   margin-left: auto;
   background-size: cover;
   background-position: center;
 }
+
+.Container {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
 
 input {
   margin-bottom: 1em;
@@ -57,7 +65,7 @@ input {
 }
 
 .button {
-  background: linear-gradient(rgba(255, 255, 255, 0.185), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
   color: white;
   display: inline-block;
   border-radius: 15px;
@@ -65,7 +73,6 @@ input {
 
 .button:hover {
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.185));
-  color: turquoise;
   box-shadow: inset 0px 0px 20px 0px white;
 }
 
@@ -73,20 +80,19 @@ input {
   margin-bottom: 1em;
 }
 
+.ask:hover {
+  font-weight: 600;
+}
+
 a {
   display: block;
   text-decoration: none;
   color: white;
   white-space: nowrap;
-  text-shadow: 0px 0px 5px white;
 }
 
 .button > a {
   padding: 0.5rem 2rem;
-}
-
-a:hover {
-  color: turquoise;
 }
 
 .secContainer {
