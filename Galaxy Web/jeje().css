@@ -80,12 +80,17 @@ button:hover {
 
 .accept {
     text-align: left;
-    background: rgb(212, 67, 67);
+    color: white;
+}
+
+.accept > input {
+    width: 5%;
+    height: 1em;
+    margin-bottom: 0;
+    display: inline-flex;
 }
 
 a {
-    display: block;
-    text-decoration: none;
     color: white;
 }
 
