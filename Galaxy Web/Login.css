@@ -25,8 +25,8 @@ header {
 
 h1 {
   position: relative;
-  left: 40%;
-  width: 100%;
+  left: 20%;
+  width: 60%;
   color: white;
   font-size: 7.5em;
   display: flex;
@@ -35,7 +35,6 @@ h1 {
 }
 
 form {
-  height: 25vh;
   width: 25vw;
   text-align: center;
 }
@@ -77,33 +76,16 @@ input {
 }
 
 .ask {
+  display: block;
   margin-bottom: 1em;
-}
-
-.ask:hover {
-  font-weight: 600;
 }
 
 a {
   display: block;
   text-decoration: none;
   color: white;
-  white-space: nowrap;
 }
 
 .button > a {
   padding: 0.5rem 2rem;
-}
-
-.secContainer {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.0));
-  height: 15em;
-  width: 30em;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
 }

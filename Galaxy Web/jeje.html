@@ -1,59 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet">
-    <link rel="stylesheet" href="jeje.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-        <h1>GALAX WEB</h1>
-    </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="jeje().css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Login2</title>
+</head>
+<body>
+  <header>
+    <h1>Galaxy Web</h1>
+  </header>
+  
+  <div class="triCont"></div>
 
-    <div class="container">
-      <form action="" method="GET">
-          <fieldset>
-            <legend><span class="material-icons-outlined">assignment_ind</span>Registrate</legend>
-            <div class="alias">
-              <label class="etiqueta" for="nick">NickName</label>
-              <input type="text" id="nick" name="nick" />
-            </div>
-            <div class="correo">
-              <label class="etiqueta" for="email">Email</label>
-              <input type="text" id="email" name="email" />
-            </div>
-            <div class="pass">
-              <label class="etiqueta" for="pass">Password</label>
-              <input type="password" id="pass" name="pass" />
-            </div>
-            <div class="pass">
-              <label class="etiqueta" for="pass">Password</label>
-              <input type="password" id="pass" name="pass" />
-            </div>
-            <div class="name_user">
-              <label class="etiqueta" for="pass">Nombre</label>
-              <input type="text" id="name_user" name="name_user" />
-            </div>
-            <div class="age">
-                <label class="etiqueta" for="edad">Edad</label>
-                <input type="number" id="edad" name="edad">
-            </div>
-            <div class="type_user">
-                <label class="etiqueta" for="type_user">Modalidad</label>
-                <select id="type_user" required name="type_user">
-                    <option value="estandar">Estandar</option>
-                    <option value="vip">Vip</option>
-                </select>
-            </div>
-        </fieldset>
-        <input class="boton" type="submit" name="submit" id="submit">
+  <div class="container">
+    <div class="box">
+      
+      <form method="GET" action="#">
+        <div>
+          <input placeholder="First name and surnames" id="usuario" type="text"/>
+        </div>
+        <div>
+          <input placeholder="E-mail" id="usuario" type="email"/>
+        </div>
+        <div>
+          <input placeholder="User name" id="usuario" type="text"/>
+        </div>
+        <div>
+          <input placeholder="Password" id="password" type="password"/>
+        </div>
+        <div>
+          <input placeholder="Repeat your password" id="password" type="password"/>
+        </div>
+
+        <input type="button" value="">
+        <input type="button" value="">
+        <input type="button" value="">
+
+        <div class="button ask"><a href="#">Did you forgot your password?</a></div>
+        <div class="button"><a href="#">Log in</a></div>
+        <div class="button"><a href="#" type="sumbit">Sign up</a></div>
+
       </form>
+
     </div>
-  </body>
+  </div>
+  
+</body>
 </html>
