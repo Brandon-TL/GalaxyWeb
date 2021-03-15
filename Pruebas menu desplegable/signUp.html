@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signUp.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <title>signUp</title>
+</head>
+<body>
+  <header>
+    <h1>Galaxy Web</h1>
+  </header>
+  
+  <div class="signUp">
+    <div class="triCont"></div>
+    <button class="cerrar"><span class="material-icons-outlined">close</span></button>
+    <div class="container">
+      <div class="box">
+        
+        <form method="GET" action="#">
+          <div>
+            <input placeholder="First name and surnames" id="usuario" type="text" required/>
+          </div>
+          <div>
+            <input placeholder="E-mail" id="usuario" type="email" required/>
+          </div>
+          <div>
+            <input placeholder="User name" id="usuario" type="text" required/>
+          </div>
+          <div>
+            <input placeholder="Password" id="password" type="password" required/>
+          </div>
+          <div>
+            <input placeholder="Repeat your password" id="password" type="password" required/>
+          </div>
+  
+          <div>
+            <input type="number" id="edad" name="edad" placeholder="Edad" min="18">
+          </div>
+          
+          <!-- <div class="select">
+            <select id="type" name="type" required>
+              <option value="estandar">Estandar</option>
+              <option value="vip">Vip</option>
+            </select>
+          </div> -->
+  
+          <div class="accept"><input type="checkbox" name="accept" id="accept" required><label for="accept">Acepto las <a target="_blank" href="https://policies.google.com/terms?hl=es">Condiciones de Servicio</a> y la <a target="_blank" href="https://policies.google.com/privacy?hl=es">Política de Privacidad</a> de Galaxy Web.</label></div>
+          <button type="submit">Continuar</button>
+        </form>
+  
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+</html>
